@@ -19,9 +19,4 @@ public class UserController {
     public ResponseEntity<UserDto> createNewUser(@RequestBody UserDto user){
         return ResponseEntity.ok(service.createNewUser(user));
     }
-
-    @GetMapping("new")
-    public String createNewUser(){
-        return "cuzinho";
-    }
 }
